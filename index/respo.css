@@ -1,0 +1,468 @@
+@media (max-width: 639px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px;
+    padding: 1rem;
+    background-color: black;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 0;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .logo_X {
+    margin-top: 50px;
+    height: 80px; 
+    width: 80px;
+    object-fit: contain; 
+    position: relative;
+    /* padding: auto; */
+    /* padding-bottom: 50px; */
+  }
+
+  header .nav-bar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  header .nav-bar a img {
+    width: 24px;
+    height: 24px;
+  }
+
+  header .nav-bar a p {
+    display: none;
+  }
+
+  /* Image logo */
+  header > div img {
+    width: 40px;
+    height: auto;
+  }
+
+  /* Bouton "Poster" (icône uniquement sur mobile) */
+  .nav-bar button p {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    background-color: white;
+    position: relative;
+  }
+  .nav-bar button p::before {
+    content: "+";
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: 4px;
+    left: 14px;
+  }
+
+  /* User avatar mobile */
+  .user_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .user_div #para-name-user {
+    display: none;
+  }
+
+  /* Popup mobile */
+  .popup {
+    margin-left: 300px;
+    flex-direction: column;
+  }
+  .popup2 {
+    margin-top: 70px;
+  }
+
+  #main_profil {
+    margin-left: 0; 
+    width: 100%; 
+    flex-direction: column; 
+    height: auto; /
+  }
+
+  /* Barre sticky du haut */
+  #main_profil > div.sticky {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  /* Les liens dans la barre sticky */
+  #main_profil > div.sticky a {
+    margin-right: 0; /* on supprime la marge droite */
+  }
+
+  /* Conteneur du nom d'utilisateur */
+  #para-name-user_profil {
+    width: auto;
+    /* largeur auto pour le texte */
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  /* Section photo de couverture */
+  #photo_profil {
+    /* height: 200px; hauteur réduite */
+    flex-direction: column; /* photo et bouton empilés */
+  }
+
+  /* Conteneur fond de la couverture */
+  #photo_profil .cover-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+
+    
+    margin-top: 100px;
+  }
+
+  /* Espace couverture prend 100% */
+  #space_couverture {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* Conteneur photo profil + bouton */
+  #case-profil {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+
+    width: 90%;
+  }
+  #btn-modifier {
+   
+    align-self: flex-start; /* pousse à gauche dans un flex column */
+    margin-left: 1rem; /* optionnel, pour un petit décalage depuis le bord */
+  }
+  #nav_post {
+    margin-top: 40%;
+  }
+ 
+  .div-profil {
+    margin-top: 10%;
+    margin-left: 50px;
+  }
+
+
+
+  /* Popup modifier profil responsive */
+  #popup-modifier {
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+  }
+  .space_popup {
+    width: 100vw;
+    margin-left: 90px;
+    padding-right: 100px;
+  }
+ 
+
+  /* Dates et infos empilés verticalement */
+  #dates_profil,
+  #infos_profil {
+    padding-left: 1rem;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  #dates_profil {
+    margin-top: 3%;
+    margin-left: 15%;
+  }
+
+  #infos_profil {
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+  /* Section post : empilée verticalement */
+  #post_profil {
+    flex-direction: column;
+    margin-top: 40%;
+    border-bottom: none;
+  }
+
+  /* Navigation des posts : espacé et taille adaptée */
+  #nav_post {
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+
+  #nav_post a {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  /* Section tweets padding */
+  section.post_tweets {
+    margin-left: 60px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1104px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100px;
+    padding: 1rem;
+    background-color: black;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 0;
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-around;
+    height: auto;
+  }
+  .logo_X {
+    margin-top: 50px;
+    height: 80px; /* tu peux aussi essayer 100px ou 5rem */
+    width: 80px;
+    object-fit: contain; /* ou cover si tu veux remplir */
+    position: relative;
+    /* padding: auto; */
+    /* padding-bottom: 50px; */
+  }
+
+  header .nav-bar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  header .nav-bar a img {
+    width: 24px;
+    height: 24px;
+  }
+
+  header .nav-bar a p {
+    display: none;
+  }
+
+  /* Image logo */
+  header > div img {
+    width: 40px;
+    height: auto;
+  }
+
+  /* Bouton "Poster" (icône uniquement sur mobile) */
+  .nav-bar button p {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    background-color: white;
+    position: relative;
+  }
+  .nav-bar button p::before {
+    content: "+";
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: 4px;
+    left: 14px;
+  }
+
+  /* User avatar mobile */
+  .user_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+  }
+
+  .user_div #para-name-user {
+    display: none;
+  }
+
+  /* Popup mobile */
+  .popup {
+    margin-left: 300px;
+    flex-direction: column;
+  }
+  .popup2 {
+    margin-top: 70px;
+  }
+
+  #main_profil {
+    margin-left: 0; /* plus de marge à gauche */
+    width: 100%; /* prend toute la largeur */
+    flex-direction: column; /* empile les éléments verticalement */
+    height: auto; /* hauteur automatique */
+  }
+
+  /* Barre sticky du haut */
+  #main_profil > div.sticky {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  
+
+  /* Conteneur du nom d'utilisateur */
+  #para-name-user_profil {
+    width: auto;
+    /* largeur auto pour le texte */
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  /* Section photo de couverture */
+  #photo_profil {
+    height: 200px; 
+    flex-direction: column; 
+  }
+
+  /* Conteneur fond de la couverture */
+  #photo_profil .cover-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+
+    
+    margin-top: 100px;
+  }
+
+  /* Espace couverture prend 100% */
+  #space_couverture {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* Conteneur photo profil + bouton */
+  #case-profil {
+    position: relative;
+    display: flex;
+    justify-content: center; /* centrer horizontalement */
+
+    width: 90%;
+  }
+  #btn-modifier {
+    caret-color: white;
+    align-self: flex-start; /* pousse à gauche dans un flex column */
+    margin-left: 1rem; /* pour un petit décalage depuis le bord */
+  }
+  #nav_post {
+    margin-top: 20%;
+  }
+ 
+
+  .div-profil {
+    margin-top: 10%;
+    margin-left: 100px;
+  }
+
+  
+
+  /* Popup modifier profil responsive */
+  #popup-modifier {
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+  }
+  .space_popup {
+    width: 100vw;
+    margin-left: 90px;
+    padding-right: 100px;
+  }
+ 
+  /* Dates et infos empilés verticalement */
+  #dates_profil,
+  #infos_profil {
+    padding-left: 1rem;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  #dates_profil {
+    margin-top: 3%;
+    margin-left: 15%;
+  }
+
+  #infos_profil {
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+  /* Section post : empilée verticalement */
+  #post_profil {
+    flex-direction: column;
+    margin-top: 40%;
+    border-bottom: none;
+  }
+
+  /* Navigation des posts */
+  #nav_post {
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+
+  #nav_post a {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  
+
+  #search-section {
+    display: none;
+  }
+
+  .div-bar {
+    display: none;
+  }
+  section.post_tweets {
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #main_profil {
+   
+    margin-left: 270px;
+    width: 49%;
+  }
+
+  header {
+    width: 230px;
+  }
+  .div-bar {
+    margin: auto;
+  }
+  #btn-modifier {
+    margin-left: -150px;
+    width: auto;
+  }
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    /> -->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>acceuil</title>
+    <!-- <script src="script_conex/connex2.js" defer></script> -->
+    <script src="script_conex/acceuil.js" defer></script>
+    <script src="script_popu/galerie.js" defer></script>
+    
+    <script src="script_popu/pofil2.Js" defer></script>
+    <script src="script_popu/popup.js" defer ></script>
+    <script src="script_tweets/affich.Js" defer></script>
+    <script src="script_tweets/post.js" defer></script>
+    <script src="script_deconex/deconex.Js" defer ></script>
+    <link rel="stylesheet" href="respo.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-black w-full flex flex-col h-screen">
+     <header class="w-1/4 h-1 p-6 fixed left-0 top-0">
+      <div class="w-full h-16 -mt-4">
+        <img
+          src="assets/logo_twitter.jpg"
+          alt="Logo Twitter"
+          class="logo_X w-20 h-11 object-contain"
+        />
+      </div>
+      <nav class="nav-bar flex flex-col gap-5 items-start w-full ml-6">
+        <a href="profile.html" class=" link-nav flex flex-row items-center gap-4"
+          ><img
+            width="23"
+            height="23"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/home.png"
+            alt="home"
+          />
+
+          <p class="text-white text-sm w-[300px]">Domicile</p></a
+        >
+        <a href="" class="  link-nav flex flex-row items-center gap-4">
+          <img
+            width="27"
+            height="27"
+            src="https://img.icons8.com/ios/50/FFFFFF/search--v1.png"
+            alt="search--v1"
+          />
+          <p class="text-white text-sm w-[300px]">Explorer</p></a
+        >
+        <a href="" class=" link-nav flex flex-row items-center gap-4">
+          <img
+            width="27"
+            height="27"
+            src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/appointment-reminders--v1.png"
+            alt="appointment-reminders--v1"
+          />
+          <p class="text-white text-sm w-[300px]">Notifications</p>
+        </a>
+        <a href="" class=" link-nav flex flex-row items-center gap-4">
+          <img
+            width="23"
+            height="25"
+            src="https://img.icons8.com/ios/50/FFFFFF/new-post--v1.png"
+            alt="new-post--v1"
+          />
+          <p class="text-white text-sm w-[300px]">Messages</p>
+        </a>
+
+        <a href="" class=" link-nav flex flex-row items-center gap-4">
+          <img
+            width="27"
+            height="27"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/grok.png"
+            alt="grok"
+          />
+          <p class="text-white text-sm w-[300px]">Grok</p>
+        </a>
+
+        <a href="" class=" link-nav flex flex-row items-center gap-4">
+          <img
+            width="27"
+            height="27"
+            src="https://img.icons8.com/ios-glyphs/60/FFFFFF/group-foreground-selected.png"
+            alt="group-foreground-selected"
+          />
+          <p class="text-white text-sm w-[300px]">Communautés</p>
+        </a>
+
+        <a href="profile.html" class=" link-nav flex flex-row items-center gap-4"
+          ><img
+            width="27"
+            height="27"
+            src="https://img.icons8.com/material/48/FFFFFF/gender-neutral-user--v1.png"
+            alt="gender-neutral-user--v1"
+          />
+          <p class="text-white text-xs sm:text-sm sm:w-[300px]">Profil</p>
+        </a>
+
+        <a href="" class=" link-nav flex flex-row items-center gap-4">
+          <img
+            width="27"
+            height="27"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/more.png"
+            alt="more"
+          />
+          <p class="text-white text-sm w-[300px]">Plus</p>
+        </a>
+        <a href="" class=" link-nav items-center">
+          <button>
+            <p
+              class="text-black bg-white border-white border-[2px] rounded-full text-xl p-3 w-[200px]"
+            >
+              Poster
+            </p>
+          </button></a
+        >
+
+        <div class="user_div flex flex-row mt-6 cursor-pointer">
+         
+          <div class="rounded-full border-black border-5 w-10 h-10 bg-[#333639] ">
+               <img
+              src=""
+              alt="photo de profil"
+              class="profile-picture w-full h-full object-cover  rounded-full  "
+            />
+          </div>
+          
+            <div id="para-name-user" class="flex flex-col">
+              <p id="username" class="text-white text-sm w-[300px] username1">
+                username
+              </p>
+              <p class="text-white text-sm w-[300px] username2">@username</p>
+            </div>
+          </a>
+        </div>
+        <!-- popu -->
+        <div
+         
+          class="popup hidden absolute bg-gray-800 text-white text-sm p-4 rounded-xl shadow-lg z-50 w-60 mt-96"
+        >
+          <a href="login.html" class="block py-1 px-2 rounded hover:bg-gray-700"
+            >ajoutez un compte existant</a
+          >
+          <button
+            
+            class="btn_deconex block py-1 px-2 rounded hover:bg-gray-700"
+          >
+            Déconnexion
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- popup de la popup -->
+    <div
+      
+      class="popup2 hidden fixed bg-black bg-opacity-50 top-4  z-[9999] justify-center items-center"
+    >
+      <div class="bg-gray-800  p-6 rounded-xl shadow-xl w-80 text-center">
+        <p class="text-white text-lg mb-4">
+          Voulez-vous vraiment vous déconnecter ?
+        </p>
+        <div class="flex justify-center gap-4">
+          <button
+           
+            
+            class="btn_deconnexion px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+            >Se déconnecter</button
+          >
+          <button
+            id=""
+            class="cancel_btn px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
+          >
+            Annuler
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main
+      id="main_profil"
+      class="ml-[18%] w-[82%] flex flex-col sm:ml-[20%] sm:w-2/4"
+    >
+      <div
+        class="sticky z-50 h-15 justify-around top-0 bg-opacity-80 backdrop-blur-md text-white flex gap-10 p-4 border-b border-gray-700 text-sm sm:text-base"
+      >
+        <div class="flex flex-row items-center gap-8 sm:gap-x-52">
+          <a class="text-white text-sm">Pour vous</a>
+          <a class="text-white text-sm">Abonnements</a>
+        </div>
+      </div>
+
+      <section
+        id="photo_profil"
+        class="flex flex-col bg-gray-700 w-full sm:h-40"
+      >
+        <div class="bg-black w-auto sm:h-96 relative flex flex-col items-start">
+         
+
+          <div class="flex flex-row p-5 gap-2 w-full">
+            <a id="username_profil" class="text-white text-sm">
+              <img
+                src="assets/sug_1.jpg"
+                alt="photo de profil"
+                class="profile-picture rounded-full w-10 h-10"
+              />
+            </a>
+            <input
+              id="tweets"
+              type="text"
+              placeholder="Que se passe-t-il?"
+              class="border-none rounded-md text-base sm:text-2xl text-white flex-1 bg-transparent focus:outline-none"
+            />
+          </div>
+
+          <button
+            type="button"
+            class="btn_post right-3 absolute mt-[4.5rem] sm:mt-11 text-black bg-white border-white border-[2px] rounded-full text-sm sm:text-xl p-2 w-[90px] sm:w-[100px]"
+          >
+            Poster
+          </button>
+
+          <section
+            class="img_section none flex-col items-center justify-center h-[40vh] w-[80%] border-b border-gray-700 text-white mx-auto"
+            style="display: none"
+          >
+            <img
+              id="imagePreview"
+              style="display: none"
+              class="rounded-lg w-60 h-55 object-cover"
+            />
+          </section>
+
+          <div class="flex px-6 gap-4 mt-5 border-b-2 border-gray-700 w-full">
+            <img
+              src="assets/galerie_twees.png"
+              alt=""
+              id="image_tweet"
+              class="cursor-pointer"
+            />
+            <input
+              type="file"
+              id="imageInput"
+              accept="image/*"
+              style="display: none"
+            />
+
+            <button>
+              <img src="assets/Gif.png" alt="" class="galerie_input" />
+            </button>
+            <a href=""><img src="assets/graphique.png" alt="" /></a>
+            <a href=""><img src="assets/smile.png" alt="" /></a>
+            <a href=""><img src="assets/Top-Tweets.png" alt="" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="post_tweets flex flex-col w-full border-b border-gray-700 text-white"
+      >
+        <!-- <div id="icon_reaction" class="flex w-full justify-between p-4"></div> -->
+      </section>
+    </main>
+
+    <section
+      id="search-section"
+      class="hidden sm:flex absolute w-1/4 flex-col top-0 right-0 justify-center gap-8"
+    >
+      <!-- Barre de recherche -->
+      <div
+        class="fixed top-0 right-0 z-50 w-[22.5vw] bg-black bg-opacity-100 backdrop-blur text-white flex flex-col gap-4 py-4 pr-4"
+      >
+        <input
+          type="text"
+          placeholder="Rechercher"
+          class="text-white bg-[#16181c] border border-white rounded-full text-sm w-full pl-10 py-2 relative"
+        />
+        <img
+          src="https://img.icons8.com/ios/50/FFFFFF/search--v1.png"
+          alt="search"
+          class="w-4 h-4 absolute top-1/2 left-3 transform -translate-y-1/2"
+        />
+      </div>
+      <div
+        id="case_suggestion"
+        class="flex flex-col w-full relative h-75 border-[1px] border-gray-300 rounded-xl right-10 p-5 gap-4"
+      >
+        <h3 class="font-bold text-2xl text-white">Vous pourriez aimer</h3>
+        <div class="flex flex-row text-white gap-3">
+          <img
+            src="assets/sug_1.jpg"
+            alt="profil_sugg"
+            class="rounded-full w-11 h-11"
+          />
+          <div class="flex flex-col">
+            <p>*Urbano*</p>
+            <p>@Urbano_N</p>
+          </div>
+
+          <button
+            class="text-black bg-white border-white border-[2px] rounded-full text-sm p-1 w-[80px] ml-17"
+          >
+            Suivre
+          </button>
+        </div>
+
+        <div class="flex flex-row text-white gap-3">
+          <img
+            src="assets/sug_2.jpg"
+            alt="profil_sugg"
+            class="rounded-full w-11 h-11"
+          />
+          <div class="flex flex-col">
+            <p>Bernard BAHATI</p>
+            <p>@Bernard_bahati</p>
+          </div>
+
+          <button
+            class="items-center text-black bg-white border-white border-[2px] rounded-full text-sm w-[80px] ml-8"
+          >
+            Suivre
+          </button>
+        </div>
+
+        <div class="flex flex-row text-white gap-3">
+          <img
+            src="assets/sug_3.jpg"
+            alt="profil_sugg"
+            class="rounded-full w-11 h-11"
+          />
+          <div class="flex flex-col">
+            <p>Billy</p>
+            <p>@RebeuDeter</p>
+          </div>
+
+          <button
+            class="items-center text-black bg-white border-white border-[2px] rounded-full text-sm p-1 w-[80px] ml-14"
+          >
+            Suivre
+          </button>
+        </div>
+
+        <a href="#" class="text-blue-600">Afficher plus</a>
+      </div>
+      <div
+        id="case_tendance"
+        class="flex flex-col w-full relative h-100 border-[1px] border-gray-300 rounded-xl right-10 p-5 gap-4 text-white"
+      >
+        <h3 class="font-bold text-2xl text-white">Ce qui se passe</h3>
+        <div class="">
+          <div class="flex flex-row justify-between">
+            <p>Tendances</p>
+            <a href="#">...</a>
+          </div>
+
+          <h4>Nairobi</h4>
+          <p>51 k publications</p>
+        </div>
+
+        <div>
+          <div class="flex flex-row justify-between">
+            <p>Tendances</p>
+            <a href="#">...</a>
+          </div>
+          <h4>le m23</h4>
+          <p>2 728 publications</p>
+        </div>
+
+        <div>
+          <div class="flex flex-row justify-between">
+            <p>Tendances</p>
+            <a href="#">...</a>
+          </div>
+          <h4>AS Monaco</h4>
+          <p>5 629 publications</p>
+        </div>
+        <a href="#" class="text-blue-600">Afficher plus</a>
+      </div>
+      <div
+        class="w-[25%] justify-end items-center h-15 flex fixed bottom-0 right-6 border-2 rounded-t-lg shadow-[0_-4px_8px_rgba(255,255,255,0.2)]"
+      >
+        <a href=""
+          ><img
+            src="assets/Button - Écrire un nouveau Message → SVG.png"
+            alt="new message"
+            class="w-6 h-6 mr-6"
+        /></a>
+        <a href=""
+          ><img
+            src="assets/Button - Ouvrir → SVG.png"
+            alt="ouvrir"
+            class="w-6 h-6 mr-6"
+        /></a>
+      </div>
+      <footer class="mt-auto text-sm text-gray-500 text-center space-y-1">
+        <p>
+          <a href="#" class="hover:underline">Conditions d’utilisation</a> |
+          <a href="#" class="hover:underline">Politique de confidentialité</a> |
+          <a href="#" class="hover:underline">Cookies</a>
+        </p>
+        <p>
+          <a href="#" class="hover:underline">Accessibilité</a> |
+          <a href="#" class="hover:underline">Infos sur les annonces</a> |
+          <a href="#" class="hover:underline">Plus</a>
+        </p>
+        <p class="mt-2">© 2025 X Corp.</p>
+      </footer>
+    </section>
+    <!-- Ligne entre nav et main -->
+    <!-- Ligne entre nav et main -->
+    <div
+      class="div-bar hidden sm:block fixed left-67 top-0 w-px h-screen bg-gray-700 z-50"
+    ></div>
+
+    <!-- Ligne entre main et search -->
+    <div
+      class="div-bar hidden sm:block fixed left-[70%] top-0 w-px h-screen bg-gray-700 z-50"
+    ></div>
+  </body>
+</html>
